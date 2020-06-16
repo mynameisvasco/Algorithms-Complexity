@@ -139,5 +139,10 @@ void GraphBFSWithQueueShowPath(const GraphBFSWithQueue *p, unsigned int v)
 
 void GraphBFSWithQueueDisplay(const GraphBFSWithQueue *p)
 {
-  // COMPLETAR !!
+
+  int vertexNum = GraphGetNumVertices(p->graph);
+  for (int i = 0; i < vertexNum; i++)
+  {
+    GraphBFSWithQueueShowPath(p, i);
+  }
 }

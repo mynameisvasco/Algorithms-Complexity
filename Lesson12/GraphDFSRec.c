@@ -139,6 +139,6 @@ void GraphDFSRecDisplay(const GraphDFSRec *p)
   int vertexNum = GraphGetNumVertices(p->graph);
   for (int i = 0; i < vertexNum; i++)
   {
-    GraphDFSRecShowPath(p->graph, i);
+    GraphDFSRecShowPath(p, i);
   }
 }
